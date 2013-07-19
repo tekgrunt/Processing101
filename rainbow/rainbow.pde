@@ -9,6 +9,7 @@
 //declaring the x & y coordinates that will represent the position our shape at any given time
 int x;
 int y;
+int frameCount;
 
 //declaring the variables that will represent the height & width of our shape
 int cWidth;
