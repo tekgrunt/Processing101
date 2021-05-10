@@ -133,21 +133,21 @@ void draw()
    {
       b = b + bVelocity;
    }
-   //this method is used to set the internal colour of any shapes being used after it is called
+   //This method is used to set the internal colour of any shapes being used after it is called
    fill(r, g, b);
    
-   //this method is used to set the outline colour of any shapes being used after it is called
+   //This method is used to set the outline colour of any shapes being used after it is called
    stroke(r,g,b);
    
    /*
-     after all the previous logic takes place i am taking the results and calculating the next ppositiion that
+     After all the previous logic takes place i am taking the results and calculating the next ppositiion that
      our shape is going to be drawn in
    */ 
    y = y + yDirection;
    x = x + xDirection;
    
    /*
-     the ellipse method creates our shape and draws it to the screen. to learn how it works you should visit this page: http://processing.org/reference/ellipse_.html
+     The ellipse method creates our shape and draws it to the screen. to learn how it works you should visit this page: http://processing.org/reference/ellipse_.html
      and while you are there you should look around at some of the other documentation around shapes and whatever else catches yoru interest.
      it is really important to get in the habbit of accessing documentation to learn how things work
    */
@@ -155,14 +155,14 @@ void draw()
 }
 
 /*
-  this is another system method that processing provides and allows us to take input from teh keyboard to manipulate our program.
+  This is another system method that processing provides and allows us to take input from teh keyboard to manipulate our program.
   this method is not required to make an animated program but gives us a convenient way to interact with the code. i explain some
   of the control statements in this method but am leaving the logic and variable manipulation for you to examine as an exercise.
 */
 void keyPressed() 
 {
   /*
-    this if statement will take whatever action we tell it to when the 's' key is pressed. we can put pretty much any 
+    This if statement will take whatever action we tell it to when the 's' key is pressed. we can put pretty much any 
     key we want in here as long as it is a key that when types would show up in a word processor
   */  
   if(key == 's')
@@ -171,7 +171,7 @@ void keyPressed()
      yDirection = 0; 
   } 
   /*
-    this nested series of if statements allows us to take an action when a key is pressed that does not have a symbol that 
+    This nested series of if statements allows us to take an action when a key is pressed that does not have a symbol that 
     would show up on the screen when pressed in a word processor. because these keys do not have a symbol like others processing
     provides key-words that we can use in our conditional statement to represent them. you can read more about this here:http://processing.org/reference/keyCode.html
   */
@@ -180,7 +180,7 @@ void keyPressed()
     if (keyCode == UP) 
     {
       /*
-        the print command lets us print things to the console (the little black region at the the bottom of our integrated development environemnt)
+        The print command lets us print things to the console (the little black region at the the bottom of our integrated development environemnt)
         these printed statements are a really good to tool to send yourself messages that you can use to debug yoru program
       */
       print("UP ");
